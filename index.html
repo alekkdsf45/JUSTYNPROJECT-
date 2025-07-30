@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - I Wayan Justyn Mahesa Dharma</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-image: url('Foto/Desain\ tanpa\ judul\ \(7\).jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #fff;
+      text-align: center;
+    }
+    .contact a {
+      margin: 0 10px;
+      color: purple;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .filters {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .filters button {
+      margin: 0 6px;
+      padding: 8px 16px;
+      border: none;
+      background-color: purple;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .filters button:hover {
+      background-color: #6a0dad;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-item {
+      background-color: #111;
+      border: 1px solid purple;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .gallery-item img, .gallery-item video, .gallery-item iframe {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tambahan untuk foto portrait agar tidak terpotong */
+.gallery-item.foto img {
+  object-fit: contain;
+  max-height: 100%;
+  aspect-ratio: auto;
+}
+
+    .gallery-item p {
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .gallery-item {
+    background-color: #111;
+    border: 1px solid purple;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .gallery-item.hide {
+    display: none !important;
+  }
+
+    .view-btn {
+      display: inline-block;
+      margin: 0 0 10px 0;
+      padding: 6px 12px;
+      background-color: purple;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .view-btn:hover {
+      background-color: #6a0dad;
+    }
+
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  color: #fff;
+}
+th, td {
+  border: 1px solid purple;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: purple;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JUSTYN PROJECT</h1>
+    <p>🎥 Editing Video | Videografi</p>
+    <div class="contact">
+      <a href="https://www.instagram.com/iwyn_justynmhsd" target="_blank">Instagram</a>
+      <a href="mailto:jastinmahesadarma@gmail.com">Email</a>
+      <a href="https://wa.link/r3i817" target="_blank">WhatsApp</a>
+      <a href="https://youtube.com/@justynnmahesadarmaproproject?si=ljKHu0wcymb7WQHV" target="_blank">🎥 Channel Utama</a>
+      <a href="https://youtube.com/@justynmahesa17?si=M3xSGTRPRQyGK6Nt" target="_blank">🎥 Channel Kedua</a>
+    </div>
+  </header>
+
+  <div class="container"> 
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>Dengan hormat, saya dengan bangga memspersembahkan portofolio yang mencakup karya-karya saya di bidang videografi dan fotografi. Sebagai siswa kelas 12 di SMK TI Mengwitani, jurusan Desain Komunikasi Visual (DKV), saya telah mengembangkan minat dan keahlian dalam produksi video dokumentasi dan sinematik.
+
+        Saya juga aktif dalam berbagai proyek kreatif dan berhasil menghasilkan karya visual yang mendukung dokumentasi event, pernikahan, hingga konten promosi. Melalui pengalaman ini, saya belajar untuk berkomitmen, berinovasi, dan terus berkembang di bidang visual media.
+        
+        Saya sangat menghargai kesempatan ini untuk berbagi hasil karya dan dedikasi saya. Terima kasih atas perhatian Anda.</p> <ul>
+          <li>🎯 Passion: Videografi, Editing Video, Fotografi</li>
+          <li>🛠️ Tools: Adobe Premiere Pro, After Effects, CapCut, Lightroom, Photoshop</li>
+        </ul>
+
+    </section>
+
+    <section>
+      <h2>Keahlian</h2>
+      <table>
+        <tr><th>Keahlian</th><th>Level</th></tr>
+        <tr><td>Video Editing</td><td>★★★★☆</td></tr>
+        <tr><td>Motion Graphic (Basic)</td><td>★★★☆☆</td></tr>
+        <tr><td>Color Grading</td><td>★★★★☆</td></tr>
+        <tr><td>Sound Design (Dasar)</td><td>★★★☆☆</td></tr>
+        <tr><td>Kamera & Pengambilan Gambar</td><td>★★★★☆</td></tr>
+        <tr><td>Storyboarding</td><td>★★★☆☆</td></tr>
+        <tr><td>Creative Direction</td><td>★★★★☆</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Portofolio Karya</h2>
+      <div class="filters">
+        <button onclick="filterItems('all')">Semua</button>
+        <button onclick="filterItems('video')">Videografi</button>
+        <button onclick="filterItems('foto')">Fotografi</button>
+        <button onclick="filterItems('penghargaan')">Penghargaan</button>
+      </div>
+      <div class="gallery" id="gallery">
+        <!-- Wedding -->
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/diDi_C2cnRI" frameborder="0" allowfullscreen></iframe>
+          <p>Wedding Kristen</p>
+        </div>
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/7MJOYZbzQG4" frameborder="0" allowfullscreen></iframe>
+          <p>Balinese Wedding</p>
+        </div>
+      
+        <!-- Fashion -->
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/xBONiTh2DVM" frameborder="0" allowfullscreen></iframe>
+          <p>Sadamanik (Putri Indonesia Bali)</p>
+        </div>
+      
+        <!-- Mepandes -->
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/8fpNHKZDtJk" frameborder="0" allowfullscreen></iframe>
+          <p>Upacara Mepandes</p>
+        </div>
+      
+        <!-- Bulan Pitung Dina -->
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/gIhaHdKtDPw" frameborder="0" allowfullscreen></iframe>
+          <p>Bulan Pitung Dina</p>
+        </div>
+      
+        <!-- Maternity (Shorts) -->
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/Gq0iDIzvo2Y" frameborder="0" allowfullscreen></iframe>
+          <p>Video Maternity (Short)</p>
+        </div>
+      
+        <!-- Company Profile SMK -->
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/WD5PuyU-JXg" frameborder="0" allowfullscreen></iframe>
+          <p>Editing Video Company Profile SMK</p>
+        </div>
+      
+        <!-- BTS -->
+        <div class="gallery-item video">
+          <iframe src="https://www.youtube.com/embed/_SnzTlp9RYA" frameborder="0" allowfullscreen></iframe>
+          <p>Behind the Scene SMK FEST</p>
+        </div>
+      </div>
+      
+
+        <!-- Foto -->
+        <div class="gallery-item foto">
+          <img src="Foto/DSC00081_11zon.jpg" alt="Foto JustynM 302" />
+          <p>Foto Graduatiion Smp 2 Tabnanan</p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/DSC00146_11zon.jpg" alt="Dokumentasi Sekolah" />
+          <p>Foto Graduatiion Smp 2 Tabnanan </p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/DSC00155_11zon (2).jpg" alt="Dokumentasi Sekolah" />
+          <p>Foto Graduatiion Smp 2 Tabnanan </p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/DSC00862_11zon.jpg" alt="Foto JustynM 302" />
+          <p>Foto Graduatiion Smp 2 Tabnanan </p>
+        </div>
+        
+         <div class="gallery-item foto">
+          <img src="Foto/JustynM_167_11zon.jpg" alt="Foto JustynM 302" />
+          <p>Foto Hut STT Semara Putra</p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/JustynM_232_11zon.jpg" alt="Foto JustynM 302" />
+          <p>Foto Hut STT Semara Putra</p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/JustynM_210-Enhanced-NR_11zon.jpg" alt="Dokumentasi Sekolah" />
+          <p>Foto Sari Timbul</p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/JustynM_146_11zon.jpg" alt="Dokumentasi Sekolah" />
+          <p>Foto Sari Timbul  </p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/JustynM_43_11zon.jpg" alt="Dokumentasi Sekolah" />
+          <p>Foto Sari Timbul</p>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/JustynM_51 (1)_11zon.jpg" alt="Dokumentasi Sekolah" />
+          <p>Foto Sari Timbul</p>
+          <div class="gallery-item foto">
+            <img src="Foto/JustynM_5_11zon.jpg" alt="Dokumentasi Sekolah" />
+            <p>Foto Konser Bagus Wirata</p>
+          </div>
+        </div>
+        <div class="gallery-item foto">
+          <img src="Foto/SnapInsta.to_465295503_944907917460117_3115451544157012231_n_11zon.jpg" alt="Dokumentasi Sekolah" />
+          <p>Foto Konser Bagus Wirata</p>
+        </div>
+
+
+
+
+        <!-- Penghargaan -->
+        <div class="gallery-item penghargaan">
+          <img src="Foto/Justyn Mahesa _page-0001.jpg" alt="Juara 1 Lomba Editing" />
+          <p>Juara 1 Lomba Editing Se-Bali</p>
+        </div>
+        <div class="gallery-item penghargaan">
+          <img src="Foto/IMG-20231028-WA0094.jpg" alt="Sertifikat Pelatihan" />
+          <p>Sertifikat Pelatihan Desain Motion 2023</p>
+        </div>
+        <div class="gallery-item penghargaan">
+          <img src="Foto/IMG-20250627-WA0040.jpg" alt="Sertifikat Pelatihan" />
+          <p>Sertifikat Pelatihan Desain Motion 2023</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function filterItems(category) {
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach(item => {
+      item.classList.add('hide');
+      if (category === 'all' || item.classList.contains(category)) {
+        item.classList.remove('hide');
+      }
+    });
+  }
+  </script>
+</body>
+</html>
